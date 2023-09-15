@@ -1,9 +1,46 @@
 version = 1
+
 [[analyzers]]
 name = "test-coverage"
-enabled = true
+
+[[analyzers]]
+name = "shell"
+
+[[analyzers]]
+name = "secrets"
+
+[[analyzers]]
+name = "scala"
+
+[[analyzers]]
+name = "rust"
+
+  [analyzers.meta]
+  msrv = "stable"
+
+[[analyzers]]
+name = "ruby"
+
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[analyzers]]
+name = "javascript"
+
+[[analyzers]]
+name = "java"
+
+  [analyzers.meta]
+  runtime_version = "11"
+
 [[analyzers]]
 name = "go"
 
   [analyzers.meta]
-  import_root = "github.com/goadesign/goa"
+  import_root = "github.com/HaoJiang8/goa"
+
+[[analyzers]]
+name = "docker"
